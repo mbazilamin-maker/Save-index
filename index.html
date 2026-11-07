@@ -66,8 +66,8 @@ const DB={get(k,d){try{const v=localStorage.getItem('ptd_'+k);return v?JSON.pars
 const newTeam=()=>({hp:1000,atk:0,hpLv:0,base:0,shield:0});
 const maxHp=t=>1000+150*t.hpLv;
 // >>> PASTE YOUR SUPABASE ANON (public) KEY HERE: Project settings > API > anon public <<<
-const SUPABASE_URL='https://tcquibpgpbuymzrkzbak.supabase.co'SUPABASE_KEY='sb_publishable_7u_zx5wJo_V71tNw2FZbJA_CNSxf6_B';
-const CONFIGURED=SUPABASE_KEY!=='ISI_ANON_KEY';
+const SUPABASE_URL='https://tcquibpgpbuymzrkzbak.supabase.co',SUPABASE_KEY='sb_publishable_7u_zx5wJo_V71tNw2FZbJA_CNSxf6_B';SUPABASE_KEY='sb_publishable_7u_zx5wJo_V71tNw2FZbJA_CNSxf6_B';
+const CONFIGURED=SUPABASE_KEY!=='sb_publishable_7u_zx5wJo_V71tNw2FZbJA_CNSxf6_B';
 const sb=CONFIGURED?supabase.createClient(SUPABASE_URL,SUPABASE_KEY):null;
 let gcache=null;
 const email=u=>u.toLowerCase()+'@physicstd.local';
